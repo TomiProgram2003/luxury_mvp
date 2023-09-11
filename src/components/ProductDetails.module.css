@@ -1,0 +1,203 @@
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000a;
+  z-index: 1;
+}
+
+.productDetails {
+  width: 800px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400 200;
+  grid-template-areas:
+    "img dtl"
+    "fvs fvs";
+  position: absolute;
+  left: 50%;
+  text-align: center; 
+  border-radius: 10px; 
+  /* background: #007bff66;  */
+  /* box-shadow: 0 4px 6px #0000001a;  */
+  background-color: #f09a;
+  box-shadow: 
+    0 0 21px #fff9,
+    0 0 42px #f09,
+    0 0 82px #f09,
+    0 0 92px #f09,
+    0 0 102px #f09,
+    0 0 151px #f09;
+  backdrop-filter: blur(10px);
+  animation: FadeIn 1s forwards;
+}
+
+@keyFrames FadeIn {
+  from {
+    top: -100%;
+    transform: translateX(-50%) translateY(0);
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+  }
+}
+
+.productDetails * {
+  /* border: 1px solid #000; */
+}
+
+.productDetails img {
+  grid-area: img;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  margin: auto;
+  object-fit: cover;
+  border-radius: 22px;
+}
+
+.close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  color: #09fa;
+  filter: drop-shadow(3px 3px 6px #000);
+  transition: all .3s;
+}
+
+.close:hover {
+  cursor: pointer;
+  color: #09ff;
+  filter: drop-shadow(4px 6px 10px #000);
+}
+
+.details {
+  grid-area: dtl;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 20px;
+  /* background-color: #f95; */
+}
+
+.details header {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.details header h3 {
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: .2em;
+  font-weight: 900;
+  color: #1d1d1d;
+}
+
+.details header span {
+  font-weight: 500; 
+  color: #777;
+  padding-left: 6px;
+}
+
+.details header * {
+  /* background-color: #00fa; */
+}
+
+.details div {
+  /* background-color: #772; */
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  color: #d1d1d1;
+  overflow-y: auto;
+}
+
+.description {
+  text-align: left;
+  /* background-color: #f58; */
+}
+
+.features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+  list-style-type: square;
+  text-align: left;
+  margin: 18px 6px 0 18px;
+  padding-bottom: 90px;
+  /* background-color: #00f; */
+}
+
+.flavors {
+  grid-area: fvs;
+  width: 100%;
+  height: 140px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: start;
+  align-items: start;
+  gap: 10px 40px;
+  padding: 10px;
+  /* background-color: #0f03; */
+}
+
+.flavor {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid #000; */
+  background-color: #333;
+  border-radius: 8px;
+  padding: 4px;
+  box-shadow: 6px 4px 10px #0003;
+  transition: all .3s;
+}
+
+.flavor:hover {
+  transform: scale(1.025);
+  box-shadow: 8px 8px 10px #0005;
+}
+
+.flavor button {
+  padding: 2px 8px;
+  order: 1;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  color: #fff;
+  transition: background-color 0.3s, box-shadow 0.3s; 
+  background-color: #911a;;
+}
+
+.flavor button:hover {
+  background-color: #a22f;
+}
+
+.flavor span {
+  color: #ccc;
+  transition: all .3s ease-in-out;
+}
+
+.flavor > button:hover ~ span {
+  color: #fff;
+  transform: scale(1.025);
+}
+
+
+
+

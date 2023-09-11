@@ -1,0 +1,91 @@
+
+.element {
+  width: 280px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  color: #000;
+  border-radius: 20px;
+  background-color: #0046;
+  box-shadow: 0 0 20px #0039;
+  backdrop-filter: blur(10px);
+  text-align-last: left;
+}
+
+.element > * {
+  /* background-color: red;
+  border: 1px solid #000; */
+}
+
+.trash {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(25%, -25%);
+  background-color: #333;
+  color: #ccc;
+  border-radius: 50%;
+  transition: all .3s;
+}
+
+.trash:hover {
+  cursor: pointer;
+  background-color: #444;
+  color: #eee;
+}
+
+.element h4 {
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #060606;
+}
+
+.element h4 > span {
+  color: #1d1d1d;
+  font-weight: 500;
+}
+
+.element div:first-of-type span:last-child {
+  font-size: 12px;
+}
+
+.element div:last-of-type {
+  font-size: 13px;
+}
+
+.element input {
+  width: 60px;
+  padding: 4px;
+  margin-left: 4px;
+  color: #CCC; 
+  font-size: 16px;
+  outline: none;
+  background-color: #3c3c3ccc; 
+  border: none; 
+  border-radius: 5px;
+}
+
+.element input::-webkit-inner-spin-button,
+.element input::-webkit-outer-spin-button {
+  height: auto;
+  opacity: 1;
+}
+
+
+.element img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  /* background-color: #fff; */
+}

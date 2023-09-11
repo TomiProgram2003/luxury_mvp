@@ -1,0 +1,82 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "title": "SUPREME MAX",
+      "price": 20000,
+      "brand": "supreme",
+      "puffs": 7000,
+      "flavors": [
+        "Bluberry mint",
+        "Black ice",
+        "Mango ice",
+        "Strawberry banana",
+        "Banana ice"
+      ],
+      "thumbail": "https://www.vapecentralgroup.com/cdn/shop/products/supreme-max_black_ice_disposable_vape_pod_device_1024x1024_2x_9ac55cfc-b65c-4642-a1ea-9fccd2ff268e_720x.jpg?v=1634840928"
+    },
+    {
+      "id": 1,
+      "title": "BALI MAXXX",
+      "price": 10000,
+      "brand": "bali",
+      "puffs": 3500,
+      "flavors": [
+        "Ice mint",
+        "Black ice",
+        "Piña colada",
+        "Lush ice"
+      ],
+      "thumbail": "https://www.disposablevapewholesale.com/cdn/shop/products/bali-maxx-disposable-vape-device-flavors_d35bda77-aecf-4733-bc58-1328be3c85e4_500x.jpg?v=1650852569"
+    },
+    {
+      "id": 2,
+      "title": "SUPBLISS BINGO",
+      "price": 22000,
+      "brand": "supbliss",
+      "puffs": 8000,
+      "flavors": [
+        "Pink lemon",
+        "Cherry ice",
+        "Cherry peach lemonade",
+        "Lady killer",
+        "Enery drink",
+        "Watermelon strawberry",
+        "Sakura grape"
+      ],
+      "thumbail": "https://www.buyecigkits.com/images/thumbnails/500/500/detailed/11/Supbliss_Bingo_Milk_Tea_Cup_Rechargeable_Disposable_Vape_Pen_Device_.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "SUPREME XBOX",
+      "price": 26000,
+      "brand": "supreme",
+      "puffs": 8200,
+      "flavors": [
+        "Mango ice",
+        "Apple peach",
+        "Peach berry ice",
+        "Banana ice",
+        "Strawberry kiwi ice",
+        "Ice mint"
+      ],
+      "thumbail":"http://supremecigs.com/image/cache/catalog/Picthers/Xbox/Xbox%20Black%20Ice-550x550.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "Torch Diamond HHC-P",
+      "price": 18000,
+      "brand": "torch",
+      "ml": 2.2,
+      "thumbail": "https://images.squarespace-cdn.com/content/v1/5fede12796a9ec7fa138bc8c/22343cc3-d7c1-4430-a924-1bcf36e253e1/diamondhhc-siteimage.png?format=2500w"
+    },
+    {
+      "id": 5,
+      "title": "Torch HAYMAKER HEAVYWEIGHT",
+      "price": 34000,
+      "brand": "torch",
+      "ml": 4,
+      "thumbail": "https://images.squarespace-cdn.com/content/v1/5fede12796a9ec7fa138bc8c/4b45c5b9-1617-4dfb-a983-dfe8f642108f/heavyweight-siteimage.png?format=2500w"
+    }
+  ]
+}
